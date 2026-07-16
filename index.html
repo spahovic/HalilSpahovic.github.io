@@ -1,297 +1,361 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Halil Spahovic — Fachinformatiker Anwendungsentwicklung</title>
-<meta name="description" content="Halil Spahovic sucht einen Ausbildungsbetrieb, um sein zweites Lehrjahr als Fachinformatiker für Anwendungsentwicklung fortzusetzen.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Seitentitel und Beschreibung -->
+  <title>Halil Spahovic — Fachinformatiker Anwendungsentwicklung</title>
+  <meta name="description" content="Halil Spahovic sucht einen Ausbildungsbetrieb im Umkreis Bad Wildungen / Kassel für das 2. Lehrjahr als Fachinformatiker Anwendungsentwicklung.">
+
+  <!-- Wenn jemand den Link teilt (WhatsApp, LinkedIn etc.) -->
+  <meta property="og:title" content="Halil Spahovic — Fachinformatiker Anwendungsentwicklung">
+  <meta property="og:description" content="Auf der Suche nach einem Ausbildungsbetrieb für das 2. Lehrjahr.">
+  <meta property="og:type" content="website">
+
+  <!-- Schriftarten von Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Eigenes CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<a class="skip-link" href="#main">Zum Inhalt springen</a>
+  <!-- Für Screenreader: direkt zum Inhalt springen -->
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
 
-<header class="site-header">
-  <nav class="nav" aria-label="Hauptnavigation">
-    <a href="#top" class="nav-logo">HS<span class="cursor" aria-hidden="true">_</span></a>
-    <ul class="nav-links">
-      <li><a href="#ueber-mich">Über mich</a></li>
-      <li><a href="#praxis">Praxis</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#persoenlichkeit">Freizeit</a></li>
-      <li><a href="#kontakt" class="nav-cta">Kontakt</a></li>
-    </ul>
-    <button class="theme-toggle" id="themeToggle" aria-label="Farbmodus umschalten" type="button">
-      <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-      <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1111.2 3 7 7 0 0021 12.8z"/></svg>
-    </button>
-  </nav>
-</header>
+  <!-- ===================== HEADER / NAVIGATION ===================== -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Hauptnavigation">
 
-<main id="main">
+      <!-- Logo links -->
+      <a href="#top" class="nav-logo">HS<span class="cursor" aria-hidden="true">_</span></a>
 
-  <!-- HERO -->
-  <section class="hero" id="top">
-    <div class="hero-inner">
-      <div class="hero-text reveal">
-        <p class="eyebrow">// fachinformatiker · anwendungsentwicklung</p>
-        <h1 class="hero-title">
-          Ich programmiere<br>noch nicht perfekt.<br>
-          <span class="accent-text">Aber ich will es lernen —<br>und ich beweise es.</span>
-        </h1>
-        <p class="hero-sub">
-          2. Lehrjahr Fachinformatiker für Anwendungsentwicklung, auf der Suche nach einem
-          Betrieb, der mir die Chance gibt, weiterzumachen.
-        </p>
-        <div class="hero-actions">
-          <a href="#ueber-mich" class="btn btn-primary">Mehr erfahren</a>
-          <a href="#kontakt" class="btn btn-ghost">Kontakt aufnehmen</a>
-        </div>
+      <!-- Links in der Mitte (auf Mobile ausgeblendet) -->
+      <ul class="nav-links">
+        <li><a href="#ueber-mich">Über mich</a></li>
+        <li><a href="#praxis">Praxis</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#persoenlichkeit">Freizeit</a></li>
+        <li><a href="#kontakt" class="nav-cta">Kontakt</a></li>
+      </ul>
+
+      <!-- Rechts: Theme-Toggle und Hamburger-Button -->
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Farbmodus umschalten" type="button">
+          <!-- Sonne = Light Mode -->
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+          </svg>
+          <!-- Mond = Dark Mode -->
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.8A9 9 0 1111.2 3 7 7 0 0021 12.8z"/>
+          </svg>
+        </button>
+
+        <!-- Hamburger nur auf Mobile sichtbar -->
+        <button class="hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
-      <div class="hero-portrait-wrap reveal">
-        <div class="glow-ring" aria-hidden="true"></div>
-        <img src="images/hero-portrait.jpg" alt="Porträtfoto von Halil Spahovic" class="hero-portrait" width="800" height="1000">
-      </div>
-    </div>
-    <div class="scroll-hint" aria-hidden="true"><span></span></div>
-  </section>
+    </nav>
 
-  <!-- UEBER MICH -->
-  <section class="section" id="ueber-mich">
-    <div class="section-inner">
-      <p class="file-label reveal">// 01 — ueber-mich.md</p>
-      <h2 class="section-title reveal">Kurz zu mir</h2>
-      <div class="prose reveal">
-        <p>
-          Ich bin Halil, 21 Jahre alt, aus Bad Wildungen. Aktuell bin ich im zweiten Lehrjahr
-          zum Fachinformatiker für Anwendungsentwicklung — mein bisheriger Ausbildungsbetrieb
-          konnte das Verhältnis aus wirtschaftlichen Gründen nicht fortsetzen, weshalb ich
-          gerade nach einem neuen Betrieb suche, um dort weiterzumachen, wo ich aufgehört habe.
-        </p>
-        <p>
-          Ich bin niemand, der von sich behauptet, alles zu können. Ich kann noch nicht
-          perfekt programmieren — aber ich habe im ersten Lehrjahr echte Praxis gesammelt:
-          in einem Scrum-Team gearbeitet, Frontend-Tickets umgesetzt und bei einer
-          Infrastruktur-Migration mitgeholfen. Was ich aus dieser Zeit vor allem mitnehme:
-          Ich muss früher und öfter nachfragen, statt Dinge stillschweigend selbst zu
-          interpretieren. Das ist eine Lektion, die ich ernst nehme.
-        </p>
-        <p>
-          Was mich antreibt, ist echte Neugier für Technik — die reicht deutlich weiter
-          zurück als meine Ausbildung.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRAXIS -->
-  <section class="section section-alt" id="praxis">
-    <div class="section-inner">
-      <p class="file-label reveal">// 02 — praxis.log</p>
-      <h2 class="section-title reveal">Was ich im echten Betrieb gemacht habe</h2>
-      <p class="section-lead reveal">
-        Auch wenn meine Ausbildung unterbrochen wurde, war das erste Lehrjahr keine
-        verlorene Zeit.
-      </p>
-
-      <ul class="commit-log reveal">
-        <li class="commit">
-          <span class="commit-hash">a3f9c1</span>
-          <div class="commit-body">
-            <h3>Agile Teamarbeit</h3>
-            <p>Von Anfang an im Scrum-Team meines Betriebs eingebunden — Sprints, Dailies,
-              Retros waren für mich von Tag eins Alltag, nicht Theorie.</p>
-          </div>
-        </li>
-        <li class="commit">
-          <span class="commit-hash">7be420</span>
-          <div class="commit-body">
-            <h3>Frontend-Arbeit</h3>
-            <p>Erste eigene Tickets umgesetzt, von kleinen pixelgenauen Anpassungen bis zu
-              eigenständigen UI-Aufgaben.</p>
-          </div>
-        </li>
-        <li class="commit">
-          <span class="commit-hash">c02de8</span>
-          <div class="commit-body">
-            <h3>Infrastruktur</h3>
-            <p>Bei der Migration eines Projekts von Kubernetes auf eine einfachere
-              Docker-Compose-Lösung mitgearbeitet.</p>
-          </div>
-        </li>
-        <li class="commit">
-          <span class="commit-hash">f19a76</span>
-          <div class="commit-body">
-            <h3>Vertiefung im Selbststudium</h3>
-            <p>Das Buch „Design Patterns von Kopf bis Fuß" komplett durchgearbeitet,
-              parallel zur Arbeit im Team.</p>
-          </div>
-        </li>
-        <li class="commit">
-          <span class="commit-hash">9d5e33</span>
-          <div class="commit-body">
-            <h3>Stärke im Debugging</h3>
-            <p>Fehler in bestehendem Code zu finden liegt mir mehr als druckreifer Code aus
-              dem Nichts — eine Fähigkeit, die im Berufsalltag oft unterschätzt wird.</p>
-          </div>
-        </li>
+    <!-- Mobile Menü (klappt auf wenn Hamburger gedrückt wird) -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <ul>
+        <li><a href="#ueber-mich">Über mich</a></li>
+        <li><a href="#praxis">Praxis</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#persoenlichkeit">Freizeit</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
       </ul>
     </div>
-  </section>
+  </header>
 
-  <!-- SKILLS -->
-  <section class="section" id="skills">
-    <div class="section-inner">
-      <p class="file-label reveal">// 03 — skills.json</p>
-      <h2 class="section-title reveal">Womit ich bereits gearbeitet habe</h2>
+  <!-- ===================== MAIN CONTENT ===================== -->
+  <main id="main">
 
-      <div class="skills-grid reveal">
-        <div class="skill-group">
-          <h3>Sprachen &amp; Frameworks</h3>
-          <div class="chips">
-            <span class="chip">Java</span>
-            <span class="chip">JavaScript</span>
-            <span class="chip">TypeScript</span>
-            <span class="chip">React</span>
-            <span class="chip">Kotlin</span>
+    <!-- SEKTION 1: HERO -->
+    <section class="hero" id="top">
+      <div class="hero-inner">
+
+        <!-- Text links -->
+        <div class="hero-text reveal">
+          <p class="eyebrow">// fachinformatiker · anwendungsentwicklung</p>
+          <h1 class="hero-title">
+            Ich programmiere<br>noch nicht perfekt.<br>
+            <span class="accent-text">Aber ich will es lernen —<br>und ich beweise es.</span>
+          </h1>
+          <p class="hero-sub">
+            2. Lehrjahr Fachinformatiker für Anwendungsentwicklung, auf der Suche nach einem
+            Betrieb, der mir die Chance gibt, weiterzumachen.
+          </p>
+          <div class="hero-actions">
+            <a href="#ueber-mich" class="btn btn-primary">Mehr erfahren</a>
+            <a href="#kontakt" class="btn btn-ghost">Kontakt aufnehmen</a>
           </div>
         </div>
-        <div class="skill-group">
-          <h3>Tools &amp; Infrastruktur</h3>
-          <div class="chips">
-            <span class="chip">Docker</span>
-            <span class="chip">Git</span>
-            <span class="chip">GitHub</span>
-            <span class="chip">GitLab</span>
-          </div>
+
+        <!-- Foto rechts mit Glow-Effekt -->
+        <div class="hero-portrait-wrap reveal">
+          <div class="glow-ring" aria-hidden="true"></div>
+          <img
+            src="images/hero-portrait.jpg"
+            alt="Porträtfoto von Halil Spahovic"
+            class="hero-portrait"
+          >
         </div>
-        <div class="skill-group">
-          <h3>Methodik</h3>
-          <div class="chips">
-            <span class="chip">Scrum</span>
-            <span class="chip">Agile Teamarbeit</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <h3>Sprachen</h3>
-          <div class="chips">
-            <span class="chip">Deutsch — Muttersprache</span>
-            <span class="chip">Serbokroatisch — verhandlungssicher</span>
-            <span class="chip">Englisch — sehr gut</span>
-          </div>
-        </div>
+
       </div>
 
-      <p class="honesty-note reveal">
-        Ich bin noch am Anfang meiner technischen Reise und würde mich nicht als
-        erfahrenen Entwickler bezeichnen. Woran ich aber gerne arbeite und worin ich
-        schon jetzt gut bin: bestehenden Code lesen, Fehler finden und verstehen,
-        warum etwas nicht funktioniert.
-      </p>
-    </div>
-  </section>
+      <!-- Scroll-Pfeil unten -->
+      <div class="scroll-hint" aria-hidden="true"><span></span></div>
+    </section>
 
-  <!-- MOTIVATION -->
-  <section class="section section-alt" id="motivation">
-    <div class="section-inner">
-      <p class="file-label reveal">// 04 — motivation.txt</p>
-      <h2 class="section-title reveal">Warum Anwendungsentwicklung</h2>
-      <div class="prose reveal">
-        <p>
-          Meine Liebe zu Computern begann, als ich acht war. Wir hatten einen Laptop, der
-          zu langsam war, um die Spiele zu spielen, die ich spielen wollte — also habe ich
-          angefangen, an ihm herumzuschrauben und ihn mit Software zu optimieren. Mit 13
-          habe ich in einer Pizzeria gearbeitet, um mir meinen ersten eigenen PC zu
-          finanzieren, die Komponenten einzeln bestellt und ihn selbst zusammengebaut.
-          Seitdem baue ich immer wieder neue PCs, verkaufe die alten und fange von vorne an.
+    <!-- SEKTION 2: ÜBER MICH -->
+    <section class="section" id="ueber-mich">
+      <div class="section-inner">
+        <p class="file-label reveal">// 01 — ueber-mich.md</p>
+        <h2 class="section-title reveal">Kurz zu mir</h2>
+        <div class="prose reveal">
+          <p>
+            Ich bin Halil, 22 Jahre alt, aus Bad Wildungen. Aktuell bin ich im zweiten Lehrjahr
+            zum Fachinformatiker für Anwendungsentwicklung — mein bisheriger Ausbildungsbetrieb
+            konnte das Verhältnis aus wirtschaftlichen Gründen nicht fortsetzen, weshalb ich
+            gerade nach einem neuen Betrieb suche, um dort weiterzumachen, wo ich aufgehört habe.
+          </p>
+          <p>
+            Ich bin niemand, der von sich behauptet, alles zu können. Ich kann noch nicht
+            perfekt programmieren — aber ich habe im ersten Lehrjahr echte Praxis gesammelt:
+            in einem Scrum-Team gearbeitet, Frontend-Tickets umgesetzt und bei einer
+            Infrastruktur-Migration mitgeholfen. Was ich aus dieser Zeit vor allem mitnehme:
+            Ich muss früher und öfter nachfragen, statt Dinge stillschweigend selbst zu
+            interpretieren. Das ist eine Lektion, die ich ernst nehme.
+          </p>
+          <p>
+            Was mich antreibt, ist echte Neugier für Technik — die reicht deutlich weiter
+            zurück als meine Ausbildung.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEKTION 3: PRAXIS (Commit-Log Stil) -->
+    <section class="section section-alt" id="praxis">
+      <div class="section-inner">
+        <p class="file-label reveal">// 02 — praxis.log</p>
+        <h2 class="section-title reveal">Was ich im echten Betrieb gemacht habe</h2>
+        <p class="section-lead reveal">
+          Auch wenn meine Ausbildung unterbrochen wurde, war das erste Lehrjahr keine
+          verlorene Zeit.
         </p>
-        <p>
-          Eigentlich wollte ich Systemintegrator werden. Dass ich stattdessen als
-          Anwendungsentwickler angenommen wurde, war zunächst Zufall — aber mir wurde
-          schnell klar, dass mich genau das reizt: Anwendungsentwicklung geht tiefer in
-          die Materie. Man versteht, wie die Software funktioniert, die diese Welt im
-          Hintergrund am Laufen hält. Ich bin nicht der talentierteste Programmierer,
-          aber die Arbeit macht mir wirklich Spaß — und das ist für mich die Grundlage,
-          auf der alles andere aufbaut.
+
+        <ul class="commit-log reveal">
+          <li class="commit">
+            <span class="commit-hash">a3f9c1</span>
+            <div class="commit-body">
+              <h3>Agile Teamarbeit</h3>
+              <p>Von Anfang an im Scrum-Team meines Betriebs eingebunden — Sprints, Dailies,
+                Retros waren für mich von Tag eins Alltag, nicht Theorie.</p>
+            </div>
+          </li>
+          <li class="commit">
+            <span class="commit-hash">7be420</span>
+            <div class="commit-body">
+              <h3>Frontend-Arbeit</h3>
+              <p>Erste eigene Tickets umgesetzt, von kleinen pixelgenauen Anpassungen bis zu
+                eigenständigen UI-Aufgaben.</p>
+            </div>
+          </li>
+          <li class="commit">
+            <span class="commit-hash">c02de8</span>
+            <div class="commit-body">
+              <h3>Infrastruktur</h3>
+              <p>Bei der Migration eines Projekts von Kubernetes auf eine einfachere
+                Docker-Compose-Lösung mitgearbeitet.</p>
+            </div>
+          </li>
+          <li class="commit">
+            <span class="commit-hash">f19a76</span>
+            <div class="commit-body">
+              <h3>Vertiefung im Selbststudium</h3>
+              <p>Das Buch „Design Patterns von Kopf bis Fuß" komplett durchgearbeitet,
+                parallel zur Arbeit im Team.</p>
+            </div>
+          </li>
+          <li class="commit">
+            <span class="commit-hash">9d5e33</span>
+            <div class="commit-body">
+              <h3>Stärke im Debugging</h3>
+              <p>Fehler in bestehendem Code zu finden liegt mir mehr als druckreifer Code aus
+                dem Nichts — eine Fähigkeit, die im Berufsalltag oft unterschätzt wird.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SEKTION 4: SKILLS -->
+    <section class="section" id="skills">
+      <div class="section-inner">
+        <p class="file-label reveal">// 03 — skills.json</p>
+        <h2 class="section-title reveal">Womit ich bereits gearbeitet habe</h2>
+
+        <div class="skills-grid reveal">
+          <div class="skill-group">
+            <h3>Sprachen &amp; Frameworks</h3>
+            <div class="chips">
+              <span class="chip">Java</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">React</span>
+              <span class="chip">Kotlin</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Tools &amp; Infrastruktur</h3>
+            <div class="chips">
+              <span class="chip">Docker</span>
+              <span class="chip">Git</span>
+              <span class="chip">GitHub</span>
+              <span class="chip">GitLab</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Methodik</h3>
+            <div class="chips">
+              <span class="chip">Scrum</span>
+              <span class="chip">Agile Teamarbeit</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Sprachen</h3>
+            <div class="chips">
+              <span class="chip">Deutsch — Muttersprache</span>
+              <span class="chip">Serbokroatisch — Muttersprache</span>
+              <span class="chip">Englisch — sehr gut</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="honesty-note reveal">
+          Ich bin noch am Anfang meiner technischen Reise und würde mich nicht als
+          erfahrenen Entwickler bezeichnen. Woran ich aber gerne arbeite und worin ich
+          schon jetzt gut bin: bestehenden Code lesen, Fehler finden und verstehen,
+          warum etwas nicht funktioniert.
         </p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- PERSOENLICHKEIT -->
-  <section class="section" id="persoenlichkeit">
-    <div class="section-inner">
-      <p class="file-label reveal">// 05 — freizeit.md</p>
-      <h2 class="section-title reveal">Was mich sonst noch ausmacht</h2>
-      <p class="section-lead reveal">
-        Technik hört bei mir nicht mit Feierabend auf. Ich modde bis heute Nintendo- und
-        PlayStation-Konsolen (Homebrew, Custom Firmware) und baue seit Jahren eigene PCs —
-        von der Komponentenauswahl bis zum sauberen Kabelmanagement.
-      </p>
-
-      <div class="photo-grid reveal">
-        <img src="images/pc-build-1.jpg" alt="Innenansicht eines selbst gebauten PCs mit RGB-Beleuchtung" loading="lazy" width="1200" height="900">
-        <img src="images/pc-build-2.jpg" alt="Innenansicht eines selbst gebauten PCs mit be quiet! Kühler" loading="lazy" width="1200" height="900">
-        <img src="images/pc-build-3.jpg" alt="Weißer PC-Tower mit Sichtfenster" loading="lazy" width="1200" height="900">
-      </div>
-
-      <p class="prose reveal">
-        Neben dem Rechner hält mich vor allem Bewegung im Gleichgewicht: Ich gehe
-        regelmäßig ins Fitnessstudio und wandere gerne in der Natur. Und wenn es mal nicht
-        ums Schrauben oder Trainieren geht, treffe ich mich mit Freunden oder zocke eine
-        Runde.
-      </p>
-
-      <div class="banner-grid reveal">
-        <img src="images/nature-banner-1.jpg" alt="Wasserfall in einer Felsschlucht" loading="lazy" width="1600" height="900">
-        <img src="images/nature-banner-2.jpg" alt="Wanderweg entlang eines Flusses in einer Schlucht" loading="lazy" width="1600" height="900">
-      </div>
-    </div>
-  </section>
-
-  <!-- KONTAKT -->
-  <section class="section section-contact" id="kontakt">
-    <div class="section-inner">
-      <p class="file-label reveal">// 06 — kontakt.sh</p>
-      <h2 class="section-title reveal">Lass uns sprechen</h2>
-      <p class="section-lead reveal">
-        Ich suche einen Ausbildungsbetrieb im Umkreis Bad Wildungen / Kassel, in dem ich
-        mein zweites Lehrjahr als Fachinformatiker für Anwendungsentwicklung fortsetzen
-        kann — idealerweise mit einem Gespräch noch im Juli.
-      </p>
-
-      <div class="contact-grid reveal">
-        <a href="mailto:halil.spahovic@icloud.com" class="contact-card">
-          <span class="contact-label">E-Mail</span>
-          <span class="contact-value">halil.spahovic@icloud.com</span>
-        </a>
-        <a href="tel:+491732397188" class="contact-card">
-          <span class="contact-label">Telefon</span>
-          <span class="contact-value">0173 2397188</span>
-        </a>
-        <div class="contact-card contact-card-static">
-          <span class="contact-label">Standort</span>
-          <span class="contact-value">Bad Wildungen / Kassel</span>
+    <!-- SEKTION 5: MOTIVATION -->
+    <section class="section section-alt" id="motivation">
+      <div class="section-inner">
+        <p class="file-label reveal">// 04 — motivation.txt</p>
+        <h2 class="section-title reveal">Warum Anwendungsentwicklung</h2>
+        <div class="prose reveal">
+          <p>
+            Meine Liebe zu Computern begann, als ich acht war. Wir hatten einen Laptop, der
+            zu langsam war, um die Spiele zu spielen, die ich spielen wollte — also habe ich
+            angefangen, an ihm herumzuschrauben und ihn mit Software zu optimieren. Mit 13
+            habe ich in einer Pizzeria gearbeitet, um mir meinen ersten eigenen PC zu
+            finanzieren, die Komponenten einzeln bestellt und ihn selbst zusammengebaut.
+            Seitdem baue ich immer wieder neue PCs, verkaufe die alten und fange von vorne an.
+          </p>
+          <p>
+            Eigentlich wollte ich Systemintegrator werden. Dass ich stattdessen als
+            Anwendungsentwickler angenommen wurde, war zunächst Zufall — aber mir wurde
+            schnell klar, dass mich genau das reizt: Anwendungsentwicklung geht tiefer in
+            die Materie. Man versteht, wie die Software funktioniert, die diese Welt im
+            Hintergrund am Laufen hält. Ich bin nicht der talentierteste Programmierer,
+            aber die Arbeit macht mir wirklich Spaß — und das ist für mich die Grundlage,
+            auf der alles andere aufbaut.
+          </p>
         </div>
       </div>
+    </section>
 
-      <div class="hero-actions reveal">
-        <a href="lebenslauf.pdf" class="btn btn-primary" download>Lebenslauf herunterladen (PDF)</a>
-        <a href="mailto:halil.spahovic@icloud.com" class="btn btn-ghost">E-Mail schreiben</a>
+    <!-- SEKTION 6: FREIZEIT / PERSÖNLICHKEIT -->
+    <section class="section" id="persoenlichkeit">
+      <div class="section-inner">
+        <p class="file-label reveal">// 05 — freizeit.md</p>
+        <h2 class="section-title reveal">Was mich sonst noch ausmacht</h2>
+        <p class="section-lead reveal">
+          Technik hört bei mir nicht mit Feierabend auf. Ich modde bis heute Nintendo- und
+          PlayStation-Konsolen (Homebrew, Custom Firmware) und baue seit Jahren eigene PCs —
+          von der Komponentenauswahl bis zum sauberen Kabelmanagement.
+        </p>
+
+        <!-- PC-Build Fotos -->
+        <div class="photo-grid reveal">
+          <img src="images/pc-build-1.jpg" alt="Innenansicht eines selbst gebauten PCs mit RGB-Beleuchtung" loading="lazy">
+          <img src="images/pc-build-2.jpg" alt="Innenansicht eines selbst gebauten PCs mit be quiet! Kühler" loading="lazy">
+          <img src="images/pc-build-3.jpg" alt="Weißer PC-Tower mit Sichtfenster" loading="lazy">
+        </div>
+
+        <p class="prose reveal">
+          Neben dem Rechner hält mich vor allem Bewegung im Gleichgewicht: Ich gehe
+          regelmäßig ins Fitnessstudio und wandere gerne in der Natur. Und wenn es mal nicht
+          ums Schrauben oder Trainieren geht, treffe ich mich mit Freunden oder zocke eine
+          Runde.
+        </p>
+
+        <!-- Naturfotos -->
+        <div class="banner-grid reveal">
+          <img src="images/nature-banner-1.jpg" alt="Wasserfall in einer Felsschlucht" loading="lazy">
+          <img src="images/nature-banner-2.jpg" alt="Wanderweg entlang eines Flusses in einer Schlucht" loading="lazy">
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-</main>
+    <!-- SEKTION 7: KONTAKT -->
+    <section class="section section-contact" id="kontakt">
+      <div class="section-inner">
+        <p class="file-label reveal">// 06 — kontakt.sh</p>
+        <h2 class="section-title reveal">Lass uns sprechen</h2>
+        <p class="section-lead reveal">
+          Ich suche einen Ausbildungsbetrieb im Umkreis Bad Wildungen / Kassel, in dem ich
+          mein zweites Lehrjahr als Fachinformatiker für Anwendungsentwicklung fortsetzen
+          kann — idealerweise mit einem Gespräch noch im Juli.
+        </p>
 
-<footer class="site-footer">
-  <p>© 2026 Halil Spahovic</p>
-</footer>
+        <!-- Kontakt-Karten -->
+        <div class="contact-grid reveal">
+          <a href="mailto:halil.spahovic@icloud.com" class="contact-card">
+            <span class="contact-label">E-Mail</span>
+            <span class="contact-value">halil.spahovic@icloud.com</span>
+          </a>
+          <a href="tel:+491732397188" class="contact-card">
+            <span class="contact-label">Telefon</span>
+            <span class="contact-value">0173 2397188</span>
+          </a>
+          <div class="contact-card contact-card-static">
+            <span class="contact-label">Standort</span>
+            <span class="contact-value">Bad Wildungen / Kassel</span>
+          </div>
+        </div>
 
-<script src="js/script.js"></script>
+        <!-- Download und E-Mail Buttons -->
+        <div class="hero-actions reveal">
+          <a href="lebenslauf.pdf" class="btn btn-primary" download>Lebenslauf herunterladen (PDF)</a>
+          <a href="mailto:halil.spahovic@icloud.com" class="btn btn-ghost">E-Mail schreiben</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <p>© 2026 Halil Spahovic</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+
 </body>
-</html>
-       
+</html>  
